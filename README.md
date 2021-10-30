@@ -17,3 +17,4 @@ bin/dxfer
 ```
 open http://localhost:8080/
 ```
+![web](web.png)
