@@ -1,5 +1,5 @@
 # DXFer
-A simple web service for creating blanks for a cutting machine.
+A simple web service to creating cutting blanks.
 ## build
 `make bin/dxfer`
 
