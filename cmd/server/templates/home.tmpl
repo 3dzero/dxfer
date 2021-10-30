@@ -1,26 +1,19 @@
 {{define "home"}}
 <html>
-<head>
-  <title>Dxfer</title>
-  <link href="/static/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-  <div class="container">
-    {{template "nav"}}
-
-    {{if ne .Error ""}}
-      <div class="alert alert-danger" role="alert">
-        {{.Error}}
-      </div>
-    {{end}}
-
-    {{template "form" .}}
-  </div>
-</body>
-
+  <head>
+    <title>Dxfer</title>
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      {{template "nav"}}
+      {{if ne .Error ""}}
+        <div class="alert alert-danger" role="alert">
+          {{.Error}}
+        </div>
+      {{end}}
+      {{template "form" .}}
+    </div>
+  </body>
 </html>
-
 {{end}}
-
-
-https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.map
