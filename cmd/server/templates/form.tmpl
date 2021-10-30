@@ -1,0 +1,21 @@
+{{define "form"}}
+<form>
+  <h1>Квадрат</h1>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Name</label>
+    <input name="filename" class="form-control" placeholder="filename" value="{{.Filename}}">
+    <small class="form-text text-muted">Название файла.</small>
+  </div>
+  <div class="form-group">
+    <label >Размер по X</label>
+    <input name="X" class="form-control"  placeholder="X" value="{{.X}}">
+    <small class="form-text text-muted">пример: 10.0</small>
+  </div>
+   <div class="form-group">
+    <label >Размер по У</label>
+    <input name="Y" class="form-control"  placeholder="Y" value="{{.Y}}">
+    <small class="form-text text-muted">пример: 10.0</small>
+  </div>
+  <button type="submit" class="btn btn-primary">Отправить</button>
+</form>
+{{end}}
